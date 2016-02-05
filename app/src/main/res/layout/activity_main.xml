@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff"
+    android:id="@+id/lytPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/yingchoop"
+        android:id="@+id/txtItem"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/h1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/random"
+        android:id="@+id/btnRandom"
+        android:onClick="clickRandom"
+        android:layout_alignParentBottom="true"
+        android:background="#0005ff"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/h2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hammer"
+        android:id="@+id/btnHammer"
+        android:onClick="clickHammer"
+        android:layout_above="@+id/btnRandom"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@+id/btnScissor"
+        android:background="#ffffff"
+        android:textColor="#aeaeae"
+        android:textSize="@dimen/h2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scissor"
+        android:id="@+id/btnScissor"
+        android:onClick="clickScissor"
+        android:layout_above="@+id/btnRandom"
+        android:layout_centerHorizontal="true"
+        android:width="150dp"
+        android:background="#ffffff"
+        android:textColor="#7ac0ff"
+        android:textSize="@dimen/h2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paper"
+        android:id="@+id/btnPaper"
+        android:onClick="clickPaper"
+        android:layout_above="@+id/btnRandom"
+        android:layout_toRightOf="@+id/btnScissor"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:textColor="#ff9177"
+        android:textSize="@dimen/h2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageItem"
+        android:layout_below="@+id/txtItem"
+        android:layout_above="@+id/btnScissor"
+        android:src="@drawable/hammer" />
+</RelativeLayout>

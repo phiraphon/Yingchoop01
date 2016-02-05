@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Yingchoop01</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="yingchoop">เป่า-ยิ้ง-ฉุบ</string>
+    <string name="random">สุ่มเลือก</string>
+    <string name="hammer">ค้อน</string>
+    <string name="scissor">กรรไกร</string>
+    <string name="paper">กระดาษ</string>
+</resources>
